@@ -1,29 +1,22 @@
 # base-framework
+## 项目技术
 
-## Project setup
+    vue + vuex + vue-router + axios + iview
+
+## 项目安装
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+### 预先打包插件
 ```
-npm run serve
+npm run dll
+```
+### 启动项目开发
+```
+npm start 或 npm run serve
 ```
 
-### Compiles and minifies for production
+### 生产项目打包
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
