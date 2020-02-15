@@ -4,10 +4,10 @@ module.exports = {
   ],
   plugins: [
     [
-      "component",
+      "import",
       {
-        libraryName: "element-ui",
-        styleLibraryName: "theme-chalk"
+        libraryName: "iview",
+        libraryDirectory: "src/components"
       }
     ]
   ]

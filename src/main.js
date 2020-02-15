@@ -2,17 +2,24 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { Container, Header, Aside, Main, Footer, Button, Select } from 'element-ui';
-
-/* Element-ui 按需引入 */
-Vue.use(Container);
-Vue.use(Header);
-Vue.use(Aside);
-Vue.use(Main);
-Vue.use(Footer);
-Vue.use(Button);
-Vue.use(Select);
-/* Element-ui 按需引入 */
+import { Icon, Layout, Header, Sider, Content, Footer, Menu, MenuItem, Submenu, MenuGroup, Button, Table, Select } from 'iview';
+import 'iview/dist/styles/iview.css';
+/* IView 按需引入 */
+Vue.component('Icon', Icon);
+Vue.component('Layout', Layout);
+Vue.component('Layout', Layout);
+Vue.component('Header', Header);
+Vue.component('Sider', Sider);
+Vue.component('Content', Content);
+Vue.component('Footer', Footer);
+Vue.component('Menu', Menu);
+Vue.component('MenuItem', MenuItem);
+Vue.component('Submenu', Submenu);
+Vue.component('MenuGroup', MenuGroup);
+Vue.component('Button', Button);
+Vue.component('Select', Select);
+Vue.component('Table', Table);
+/* IView 按需引入 */
 
 Vue.config.productionTip = false
 

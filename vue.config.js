@@ -24,7 +24,8 @@ module.exports = {
         resolve: {
             // 路径别名
             alias: {
-                '@api': path.resolve(__dirname, './src/api')
+                '@api': path.resolve(__dirname, './src/api'),
+                '@components':  path.resolve(__dirname, './src/components'),
             }
         }
 

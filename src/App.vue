@@ -1,42 +1,38 @@
 <template>
-    <div id="app">
-        <el-container>
-            <el-header>
-                <div id="nav">
-                    <router-link to="/">Home</router-link> |
-                    <router-link to="/about">About</router-link>
-                </div>
-            </el-header>
-            <el-container>
-                <el-aside width="200px">Aside</el-aside>
-                <el-main>
+    <Layout class="main-container">
+        <Header>
+            <div id="nav">
+                <router-link to="/">Home</router-link> |
+                <router-link to="/about">About</router-link>
+            </div>
+        </Header>
+        <Layout>
+            <Sider>
+				<SiderMenu />
+            </Sider>
+            <Layout>
+                <Content>
                     <router-view />
-                </el-main>
-            </el-container>
-            <el-footer>Footer</el-footer>
-        </el-container>
-    </div>
+                </Content>
+                <Footer>Footer</Footer>
+            </Layout>
+        </Layout>
+    </Layout>
 </template>
-
+<script>
+import SiderMenu from '@components/SiderMenu';
+export default {
+    components: { SiderMenu }
+};
+</script>
 <style lang="less">
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-}
-
-#nav {
-    padding: 30px;
-
-    a {
-        font-weight: bold;
-        color: #2c3e50;
-
-        &.router-link-exact-active {
-            color: #42b983;
-        }
-    }
+html,
+body,
+.main-container {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
 }
 </style>
